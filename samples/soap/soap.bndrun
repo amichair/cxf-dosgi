@@ -71,10 +71,10 @@
 	org.apache.cxf.cxf-rt-rs-client;version='[3.1.12,3.1.13)',\
 	org.apache.cxf.cxf-rt-transports-http;version='[3.1.12,3.1.13)',\
 	org.apache.cxf.cxf-rt-wsdl;version='[3.1.12,3.1.13)',\
-	org.apache.cxf.dosgi.cxf-dosgi-common;version='[2.3.0,2.3.1)',\
-	org.apache.cxf.dosgi.cxf-dosgi-provider-rs;version='[2.3.0,2.3.1)',\
-	org.apache.cxf.dosgi.cxf-dosgi-provider-ws;version='[2.3.0,2.3.1)',\
+	org.apache.cxf.dosgi.cxf-dosgi-common;version='[2.4.0,2.5.0)',\
+	org.apache.cxf.dosgi.cxf-dosgi-provider-rs;version='[2.4.0,2.5.0)',\
+	org.apache.cxf.dosgi.cxf-dosgi-provider-ws;version='[2.4.0,2.5.0)',\
 	org.apache.ws.xmlschema.core;version='[2.2.2,2.2.3)',\
-	org.apache.cxf.dosgi.samples.cxf-dosgi-samples-soap-api;version='[2.3.0,2.3.1)',\
-	org.apache.cxf.dosgi.samples.cxf-dosgi-samples-soap-impl;version='[2.3.0,2.3.1)',\
+	org.apache.cxf.dosgi.samples.cxf-dosgi-samples-soap-api;version='[2.4.0,2.5.0)',\
+	org.apache.cxf.dosgi.samples.cxf-dosgi-samples-soap-impl;version='[2.4.0,2.5.0)',\
 	org.apache.felix.scr;version='[2.0.12,2.0.13)'

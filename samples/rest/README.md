@@ -16,7 +16,7 @@ Unpack karaf 4 into a server and client directory.
 Start the server karaf
 
 ```
-feature:repo-add cxf-dosgi-samples 2.3.0
+feature:repo-add cxf-dosgi-samples 2.4.0
 feature:install cxf-dosgi-sample-rest-impl
 rsa:endpoints
 ```
@@ -38,7 +38,7 @@ curl --header "Accept:application/json" http://localhost:8181/cxf/tasks/3
 Start the client karaf
 
 ```
-feature:repo-add cxf-dosgi-samples 2.3.0
+feature:repo-add cxf-dosgi-samples 2.4.0
 feature:install cxf-dosgi-sample-rest-client
 ```
 Use commands to test
