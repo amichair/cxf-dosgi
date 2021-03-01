@@ -18,6 +18,7 @@
  */
 package org.apache.cxf.dosgi.itests.multi;
 
+import static org.ops4j.pax.exam.CoreOptions.bootDelegationPackages;
 import static org.ops4j.pax.exam.CoreOptions.composite;
 import static org.ops4j.pax.exam.CoreOptions.mavenBundle;
 import static org.ops4j.pax.exam.CoreOptions.systemPackage;
@@ -300,6 +301,7 @@ public class AbstractDosgiTest {
                          // in this test, and removing a system bundle is a mess, so instead we export
                          // it again with our desired version number so everyone is happy
                          systemPackage("javax.xml.soap;version=1.4.0"),
+                         bootDelegationPackages("javax.xml.bind", "javax.xml.bind.*", "com.sun.xml.*"),
                          // avoids "ClassNotFoundException: org.glassfish.jersey.internal.RuntimeDelegateImpl"
                          systemProperty("javax.ws.rs.ext.RuntimeDelegate")
                              .value("org.apache.cxf.jaxrs.impl.RuntimeDelegateImpl"),
