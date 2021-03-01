@@ -36,7 +36,6 @@
 	osgi.identity;filter:='(osgi.identity=org.apache.cxf.dosgi.cxf-dosgi-provider-ws)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.aries.rsa.topology-manager)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
-	osgi.identity;filter:='(&(osgi.identity=org.apache.aries.rsa.discovery.command)(version>=1.9.0))',\
 	osgi.identity;filter:='(osgi.identity=org.apache.cxf.dosgi.cxf-dosgi-provider-rs)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.cxf.dosgi.samples.cxf-dosgi-samples-soap-impl)'
 -runbundles: \
@@ -53,13 +52,13 @@
 	org.apache.felix.gogo.command;version='[0.16.0,0.16.1)',\
 	org.apache.felix.gogo.shell;version='[0.12.0,0.12.1)',\
 	org.apache.felix.gogo.runtime;version='[0.10.0,0.10.1)',\
+	org.apache.karaf.shell.table;version='[4.3.0,4.4.0)',\
 	org.fusesource.jansi;version='[1.13.0,1.13.1)',\
 	javax.annotation-api;version='[1.2.0,1.2.1)',\
 	org.apache.servicemix.specs.jsr339-api-2.0.1;version='[2.6.0,2.6.1)',\
-	org.apache.aries.rsa.core;version='[1.14.0,1.15.0)',\
-	org.apache.aries.rsa.discovery.command;version='[1.14.0,1.15.0)',\
-	org.apache.aries.rsa.spi;version='[1.14.0,1.15.0)',\
-	org.apache.aries.rsa.topology-manager;version='[1.14.0,1.15.0)',\
+	org.apache.aries.rsa.core;version='[1.16.0,1.17.0)',\
+	org.apache.aries.rsa.spi;version='[1.16.0,1.17.0)',\
+	org.apache.aries.rsa.topology-manager;version='[1.16.0,1.17.0)',\
 	org.apache.cxf.cxf-core;version='[3.4.0,3.5.0)',\
 	org.apache.cxf.cxf-rt-bindings-soap;version='[3.4.0,3.5.0)',\
 	org.apache.cxf.cxf-rt-bindings-xml;version='[3.4.0,3.5.0)',\

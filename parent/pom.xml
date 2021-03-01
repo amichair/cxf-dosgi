@@ -29,7 +29,7 @@
 
         <osgi.version>6.0.0</osgi.version>
         <osgi.compendium.version>6.0.0</osgi.compendium.version>
-        <aries.rsa.version>1.14.0</aries.rsa.version>
+        <aries.rsa.version>1.16.1-SNAPSHOT</aries.rsa.version>
         <cxf.version>3.4.2</cxf.version>
         <felix.version>6.0.3</felix.version>
         <zookeeper.version>3.4.14</zookeeper.version>

@@ -74,12 +74,12 @@
 	org.apache.cxf.dosgi.cxf-dosgi-common;version='[2.4.0,2.4.1)',\
 	org.apache.cxf.dosgi.cxf-dosgi-provider-rs;version='[2.4.0,2.4.1)',\
 	org.apache.cxf.dosgi.cxf-dosgi-provider-ws;version='[2.4.0,2.4.1)',\
-	org.apache.aries.rsa.core;version='[1.14.0,1.15.0)',\
-	org.apache.aries.rsa.discovery.command;version='[1.14.0,1.15.0)',\
-	org.apache.aries.rsa.discovery.local;version='[1.14.0,1.15.0)',\
-	org.apache.aries.rsa.discovery.zookeeper;version='[1.14.0,1.15.0)',\
-	org.apache.aries.rsa.spi;version='[1.14.0,1.15.0)',\
-	org.apache.aries.rsa.topology-manager;version='[1.14.0,1.15.0)',\
+	org.apache.aries.rsa.core;version='[1.16.0,1.17.0)',\
+	org.apache.aries.rsa.discovery.command;version='[1.16.0,1.17.0)',\
+	org.apache.aries.rsa.discovery.local;version='[1.16.0,1.17.0)',\
+	org.apache.aries.rsa.discovery.zookeeper;version='[1.16.0,1.17.0)',\
+	org.apache.aries.rsa.spi;version='[1.16.0,1.17.0)',\
+	org.apache.aries.rsa.topology-manager;version='[1.16.0,1.17.0)',\
 	org.apache.cxf.cxf-core;version='[3.4.0,3.5.0)',\
 	org.apache.cxf.cxf-rt-bindings-soap;version='[3.4.0,3.5.0)',\
 	org.apache.cxf.cxf-rt-bindings-xml;version='[3.4.0,3.5.0)',\
@@ -96,4 +96,5 @@
 	org.apache.felix.gogo.command;version='[1.0.2,1.0.3)',\
 	org.apache.felix.gogo.jline;version='[1.1.0,1.1.1)',\
 	org.apache.felix.gogo.runtime;version='[1.1.0,1.1.1)',\
+	org.apache.karaf.shell.table;version='[4.3.0,4.4.0)',\
 	org.jline;version='[3.8.0,3.10.0)'
