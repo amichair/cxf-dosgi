@@ -35,7 +35,7 @@
         <zookeeper.version>3.4.14</zookeeper.version>
         <servlet.version>3.0</servlet.version>
         <servicemix.specs.version>2.9.0</servicemix.specs.version>
-        <slf4j.version>1.7.26</slf4j.version>
+        <slf4j.version>1.7.30</slf4j.version>
         <exam.version>4.13.1</exam.version>
 
         <baseline.skip>true</baseline.skip>
@@ -67,13 +67,13 @@
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.12</version>
+                <version>4.13.2</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>org.easymock</groupId>
                 <artifactId>easymock</artifactId>
-                <version>4.0.2</version>
+                <version>4.2</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
