@@ -43,7 +43,7 @@ public final class MultiBundleTools {
         return bundles;
     }
 
-    private static File getRootDirectory() {
+    public static File getRootDirectory() {
         URL url = MultiBundleTools.class.getResource("/"); // get ${root}/target/test-classes
         File dir = new File(url.getFile()).getAbsoluteFile();
         return dir.getParentFile().getParentFile();

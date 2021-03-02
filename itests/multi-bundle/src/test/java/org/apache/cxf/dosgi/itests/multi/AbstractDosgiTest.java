@@ -258,7 +258,8 @@ public class AbstractDosgiTest {
     }
 
     protected static Option configLogging() {
-        return ConfigurationAdminOptions.configurationFolder(new File("src/test/resources/cfg"));
+        File dir = new File(MultiBundleTools.getRootDirectory(), "src/test/resources/cfg");
+        return ConfigurationAdminOptions.configurationFolder(dir);
     }
 
     protected static MavenArtifactProvisionOption taskServiceAPI() {
