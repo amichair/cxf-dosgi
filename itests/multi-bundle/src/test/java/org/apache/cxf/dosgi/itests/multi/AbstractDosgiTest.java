@@ -35,10 +35,13 @@ import java.net.Socket;
 import java.net.URL;
 import java.util.Collection;
 import java.util.concurrent.Callable;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 import javax.inject.Inject;
 
+import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.data.Stat;
 import org.junit.Assert;
@@ -220,8 +223,14 @@ public class AbstractDosgiTest {
     }
 
     protected ZooKeeper createZookeeperClient() throws Exception {
-        waitPort(ZK_PORT);
-        return new ZooKeeper("localhost:" + ZK_PORT, 1000, null);
+        CountDownLatch latch = new CountDownLatch(1);
+        ZooKeeper zk = new ZooKeeper("localhost:" + ZK_PORT, 1000, event -> {
+            if (event.getState() == Watcher.Event.KeeperState.SyncConnected) {
+                latch.countDown();
+            }
+        });
+        latch.await(5000, TimeUnit.MILLISECONDS);
+        return zk;
     }
 
     protected void assertNodeExists(ZooKeeper zk, String zNode, int timeout) {
