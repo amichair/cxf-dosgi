@@ -31,6 +31,7 @@
 	osgi.identity;filter:='(osgi.identity=org.apache.cxf.dosgi.cxf-dosgi-provider-rs)',\
 	osgi.identity;filter:='(osgi.identity=org.webjars.swagger-ui)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.cxf.cxf-rt-rs-service-description-swagger)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.aries.rsa.discovery.local)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.aries.rsa.discovery.zookeeper)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.jline)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.metatype)',\
